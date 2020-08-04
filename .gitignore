@@ -1,3 +1,4 @@
 *.swp
 *.DS_STORE
+__pycache__/
 notebooks/.ipynb_checkpoints
