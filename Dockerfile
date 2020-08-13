@@ -7,6 +7,9 @@ ADD requirements.txt /build/
 RUN pip install -r requirements.txt
 ENV PYTHONPATH=/mnt:${PYTHONPATH}
 
+# sqlite3
+RUN apt-get install sqlite3
+
 # install node for jupyter lab
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
       apt-get install -y nodejs && \
